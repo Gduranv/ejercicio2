@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robótica</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon-32x32(1).png">
 </head>
 <header>
 
@@ -100,10 +101,38 @@
 
         </div>
 
+<div id="formulario">
+<script>
+        window.addEventListener('DOMContentLoaded', function() {
+        var formContainer = document.getElementById('formulario');
+  var formHTML = `
+    <h2>Formulario</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required><br><br>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  `;
+  formContainer.innerHTML = formHTML;
+formContainer.style.textAlign = 'center';
+  formContainer.style.margin = '0 auto';
+});
+</script>
+</div>
         <footer>
-            &copy; Víctor Durán <br> Maracaibo 2023 Todos los derechos reservados
+            &copy; Víctor Durán <br> Maracaibo 2024 Todos los derechos reservados
         </footer>
 
     </div>
 </body>
-</html>
+</html>		
